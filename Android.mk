@@ -9,6 +9,8 @@ LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_ENFORCE_USES_LIBRARIES := false
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := FDroidPrivilegedExtension
 LOCAL_SRC_FILES := org.fdroid.fdroid.privileged_2120.apk
